@@ -70,6 +70,35 @@ Background is set to Black color which makes the interface and elements to be in
 
 MyKeyAdaptor() holds the moments of the snake which can be achieved through the D-PAD.
 
+## Methods for Play
+
+### MyKeyAdapter(): 
+Primary important method which is used to generate the moments for the snake using the D-pad. 
+
+In-built methods like getKeyCode() and keyEvents makes the direction implementation very simple.
+
+### move(): 
+This method holds the moment of tha snake in all the directions. Swith case statement is used for creating the directional moving of the snake in all the directions.
+
+### checkCollisions(): 
+In checkCollisions(), the snake is programmed to end the game is the snake touches its body-parts or touches the boundaries of the box. Firstly, the for loop is used to declare whether the snake’s X and Y position hits the bodyparts, the game will be over. That is If , x[0] == x[i] or y[0] = y[i] the game running is false (game over). 
+
+Here, i = bodyparts
+Similarly, checkCollisons() deals with the directional aspects also.
+
+### checkApple(): 
+This code deals with the actions like popping the new apples (newApple()) at any places after the present apple is eaten, and also increases the snake size.
+
+#### Actions performed in checkApple();
+Bodyparts++ : increase the body parts. 
+
+applesEaten++ : deals with the score. 
+
+newApple() : generates the new apple at another place.
+
+### gameover() :
+Every game has an end. This game is coded to end when the user makes the snake to touch the boundaries of the box or makes itself eaten by touching its own body-parts.
+
 
 ## Built Using
  - [ Java ](https://en.wikipedia.org/wiki/Java_(programming_language)) - Programming language
